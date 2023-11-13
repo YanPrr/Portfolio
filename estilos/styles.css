@@ -1,0 +1,175 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --cor-primaria: #4b204b;
+    --cor-secundaria: #f5e1c8;
+    --cor-tercearia: whitesmoke;
+}
+
+body {
+   /* min-height: 100vh;*/
+    background-color: var(--cor-primaria);
+    color: white;
+    font: icon;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo-destaque {
+
+    color: var(--cor-secundaria);
+}
+
+.parte-importante {
+
+    color: var(--cor-secundaria);
+}
+
+.imagem {
+    width: 100%;
+    height: 25rem;
+    border: 0.3125rem solid var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-secundaria);
+    padding: 2% 0% 0% 3%;
+    font: caption;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 1.5625rem;
+    margin-left: 5%;
+}
+
+
+.apresentacao {
+    display: flex;
+    margin: 6% 14.3%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.875rem;
+    max-width: 100%; 
+    word-wrap: break-word;
+}
+
+.apresentacao__conteudo_texto {
+    font-size: 1rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.apresentacao__links__link {
+    border-radius: 0.4375rem;
+    padding: 0.6875rem 0rem;
+    width: 17.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    font-style: caption;
+    font-size: 0.9375rem;
+    border: 0.125rem solid var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.125rem;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link:hover {
+    background-color: gray
+}
+
+.rodape {
+    padding: 1.5rem;
+    color: black;
+    background-color: var(--cor-secundaria);
+    font: caption;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.rodape__about {
+    padding: 1.25rem;
+    color: black;
+    background-color: var(--cor-secundaria);
+    font: caption;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    align-self: flex-end;
+}
+
+.curriculo__links {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: bold;
+    color: palegoldenrod;
+    animation: brilho 3s linear infinite;
+    
+}
+
+@keyframes brilho {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px red;
+    }
+    50% {
+      text-shadow: 0 0 20px pink, 0 0 25px #ff0, 0 0 30px rebeccapurple;
+    }
+    100% {
+      text-shadow: 0 0 5px cyan, 0 0 10px greenyellow, 0 0 15px #fff;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .cabecalho {
+       padding:  3% 22% 0% 15%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column;
+    }
+  }
